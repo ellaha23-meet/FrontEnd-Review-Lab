@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+  background-color: lightblue;
+  color: white;
+  font-family: fantasy;
+}
+
+h1 {
+  background-color: lightgreen;
+  color: white;
+  font-family: fantasy;
+}
+p {
+  color: white;
+  font-family: fantasy;
+}
+a {
+  background-color: lightblue;
+
+  color: white;
+  font-family: fantasy;
+}
+</style>
+</head>
+
+<body style="background-color:  pink;">
+ 
+
+<h1> coffe lovers by Liya and Ella :) 
+
+</h1> 
+
+<p>we love coffee and we want to teach you all about it </p>
+<h2> different flavors: </h2> 
+<p> vanilla, caramel, cinamon, chocolate, matcha and many more... </p>
+<img src="coffee.gif" alt="coffee.gif" width="100%">
+
+<a href = "https://en.wikipedia.org/wiki/Animal_cafe">what is the connection between animals and coffee???</a>
+
+ <p id = "GFG_UP" style =
+            "font-size: 100px; font-weight: bold;">     
+        </p>
+          
+        <button onclick = "gfg_Run()"> 
+            Click here
+        </button>
+          
+        <p id = "GFG_DOWN" style =
+            "color:green; font-size: 100px; font-weight: bold;">
+        </p>
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+            var str = "Click on button to change the background color";
+          
+            el_up.innerHTML = str;
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function gfg_Run() {
+                changeColor('purple');
+                el_down.innerHTML = "Background Color changed";
+            }         
+        </script> 
+
+</body>
+</html>
+
